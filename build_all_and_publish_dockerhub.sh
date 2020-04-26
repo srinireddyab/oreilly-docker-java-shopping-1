@@ -2,21 +2,21 @@
 
 cd shopfront
 mvn clean install
-if docker build -t danielbryantuk/djshopfront . ; then
-  docker push danielbryantuk/djshopfront
+if docker build -t chinnichinnu/shopfront . ; then
+  docker push chinnichinnu/shopfront
 fi
 cd ..
 
 cd productcatalogue
 mvn clean install
-if docker build -t danielbryantuk/djproductcatalogue . ; then
-  docker push danielbryantuk/djproductcatalogue
+if docker build -t chinnichinnu/productcatalogue . ; then
+  docker push chinnichinnu/productcatalogue
 fi
 cd ..
 
 cd stockmanager
 mvn clean install
-if docker build -t danielbryantuk/djstockmanager . ; then
-  docker push danielbryantuk/djstockmanager
+if docker build -t chinnichinnu/stockmanager . ; then
+  docker push chinnichinnu/stockmanager
 fi
 cd ..
